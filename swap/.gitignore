@@ -1,0 +1,2 @@
+# This dir needs to exist, but its contents should not be checked in
+!.gitignore
