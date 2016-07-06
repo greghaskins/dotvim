@@ -2,5 +2,5 @@
 
 set -e
 basedir=$(dirname "$(readlink -f "$0")")
-ln -s "$basedir/vimrc" ~/.vimrc
+ln -svf "$basedir/vimrc" ~/.vimrc
 
