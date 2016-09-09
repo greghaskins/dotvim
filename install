@@ -3,4 +3,7 @@
 set -e
 basedir="$( cd -P "$( dirname "$0" )" && pwd )"
 ln -svf "$basedir/vimrc" ~/.vimrc
-
+if [[ -L ~/.vim ]]; then
+	unlink ~/.vim 
+fi
+ln -svf "$basedir" ~/.vim
