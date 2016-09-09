@@ -1,6 +1,6 @@
 #!/bin/bash
 
 set -e
-basedir=$(dirname "$(readlink -f "$0")")
+basedir="$( cd -P "$( dirname "$0" )" && pwd )"
 ln -svf "$basedir/vimrc" ~/.vimrc
 
